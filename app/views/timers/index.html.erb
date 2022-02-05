@@ -1,0 +1,21 @@
+<% pomodoro = Timer.find(1) %>
+<% short_break = Timer.find(2) %>
+<% long_break = Timer.find(3) %>
+<div class="d-flex justify-content-center" id="js-mode-buttons">
+  <button type="button" class="btn btn-outline-light m-1 mode-button" id="pomodoro-timer" data-mode="pomodoro"><%= pomodoro.name %></button>
+  <button type="button" class="btn btn-outline-light m-1 mode-button" id="short-break-timer" data-mode="shortBreak"><%= short_break.name %></button>
+  <button type="button" class="btn btn-outline-light m-1 mode-button" id="long-break-timer" data-mode="longBreak"><%= long_break.name %></button>
+</div>
+
+<div class="d-flex justify-content-center m-3 clock" id="js-clock">
+  <h2><span id="js-minutes">25</span></h2>
+  <h2><span class="separator">:</span></h2>
+  <h2><span id="js-seconds">00</span></h2>
+</div>
+
+<h3 id="demo"></h3>
+
+<div class="d-flex justify-content-center">
+  <button type="button" class="btn btn-outline-light m-1" id="start">Start</button>
+  <button type="button"p class="btn btn-outline-light m-1" id="stop">Stop</button>
+</div>

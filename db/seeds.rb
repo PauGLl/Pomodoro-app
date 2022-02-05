@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Timer.create(min: 25, sec: 0, name: 'Pomodoro')
+Timer.create(min: 5, sec: 0, name: 'Short break')
+Timer.create(min: 15, sec: 0, name: 'Long break')
