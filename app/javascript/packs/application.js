@@ -18,27 +18,34 @@ const longTimer = document.querySelector('#long-break-timer');
 const onGoingTimer = document.querySelector('#on-going-timer');
 const startBtn = document.querySelector('#start');
 const stopBtn = document.querySelector('#stop');
+const sound = document.querySelector('#audio-transition');
+const clickSound = document.querySelector('#audio-click');
 
 pomodoroTimer.addEventListener('click', (event) => {
+  clickSound.play();
   longTimer.classList.remove('active');
   shortTimer.classList.remove('active');
   pomodoroTimer.classList.add('active');
 });
 shortTimer.addEventListener('click', (event) => {
+  clickSound.play();
   pomodoroTimer.classList.remove('active');
   longTimer.classList.remove('active');
   shortTimer.classList.add('active');
 });
 longTimer.addEventListener('click', (event) => {
+  clickSound.play();
   pomodoroTimer.classList.remove('active');
   shortTimer.classList.remove('active');
   longTimer.classList.add('active');
 });
 
 startBtn.addEventListener('click', (event) => {
+  clickSound.play();
   startTimer();
 });
 stopBtn.addEventListener('click', (event) => {
+  clickSound.play();
   stopTimer();
 });
 
@@ -136,7 +143,7 @@ function startTimer() {
           switchMode('pomodoro');
       }
 
-      // document.querySelector("#sound").play();
+      sound.play();
 
       startTimer();
     }
