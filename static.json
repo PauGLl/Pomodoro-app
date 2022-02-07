@@ -1,0 +1,15 @@
+{
+  "name": "Pomodoro Time Management app",
+  "short_name": "Pomodoro",
+  "theme_color": "#ffbdbd",
+  "background_color": "#ffbdbd",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "https://paula-pomodoroapp.herokuapp.com/",
+  "icons": [
+    {
+      "src": "app/assets/images/tomato.png",
+      "sizes": "1024x1024"
+    }
+  ]
+}
